@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Skin It Right Shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/ee70e30df6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body >
+
+	<section class="sec">
+		<div class="header">
+			<div class="container">
+
+				<!-- ---navbar--- -->
+
+				<div class="navbar">
+					<div class="logo">
+						<img src="Images/logo2.png" width="200px" >
+					</div>
+					<nav>
+						<ul id="MenuItems">
+							<li><a href="#home">Home</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#account">Account</a></li>
+						</ul>
+					</nav>
+
+					<img class="cart" src="images/cart.png" width="45px" height="45px">
+					<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+				</div>
+
+				<div class="row">
+					<div class="col-2" data-aos="fade-right">
+						<h1>Treat Your <br>Skin Right!</h1>
+						<p>
+							Check out our new ZarZou products!
+						</p>
+						<div class="btn">Shop Now &#8594</div>
+					</div>
+					<div class="col-2">
+						<img src="Images/zarzou.png" class="zarzou" data-aos="fade-left">
+					</div>
+				</div>
+
+
+				<ul class="thumb">
+					<li><img src="Images/rss2.png" onclick="imgSlider('Images/rss2.png');changeBgColor('#fff')" ></li>
+					<li><img src="Images/ddcS.png"  onclick="imgSlider('Images/ddcS.png');changeBgColor('#555')"></li>
+					<li><img src="Images/bhs2.png"  onclick="imgSlider('Images/bhs2.png');changeBgColor('#87adfe')"></li>
+				</ul>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<button id="gotopbtn"> <i class="fas fa-arrow-circle-up"></i>  </button>
+
+
+	<!-- ----------------featured categories -------------- -->
+	<section class="one">
+		<div id="products" class="categories" data-aos="fade-left" >
+			<div class="small-container">
+				<div class="row">
+					<div class="col-3">
+						<img src="Images/bhs.jpg">
+					</div>
+					<div class="col-3">
+						<img src="Images/rss.jpg">
+					</div>
+					<div class="col-3">
+						<img src="Images/faceMist.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<!-- ----------------featured products -------------- -->
+	<section class="two">
+		<div class="small-container" data-aos="fade-right">
+			<h2 class="title">Featured Products</h2>
+			<div class="row">
+				<div class="col-4">
+					<img src="Images/ddc.jpg">
+					<h4>ZarZou Daily Deep Cleanser</h4>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<p>RM59</p>
+				</div>
+
+				<div class="col-4">
+					<img src="Images/bhs.jpg">
+					<h4>ZarZou BHS</h4>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<p>RM59</p>
+				</div>
+
+				<div class="col-4">
+					<img src="Images/rss.jpg">
+					<h4>ZarZou RSS</h4>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<p>RM59</p>
+				</div>
+
+				<div class="col-4">
+					<img src="Images/faceMist.jpg">
+					<h4>ZarZou Face Mist</h4>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<p>RM59</p>
+				</div>
+
+
+				<h2 class="title">Exclusive on SkinItRight Shop</h2>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- --------offer---------- -->
+
+	<section class="three">
+
+		<div class="offer1" data-aos="fade-left">
+			<div class="small-container">
+				<div class="row">
+					<div class="col-2">
+						<img src="Images/ddcS.png" class="offer-img">
+					</div>
+					<div class="col-2">
+						<p>Exclusive On SkinItRight Shop</p>
+						<h1>ZarZou Daily Deep Cleanser</h1>
+						<small>Exfoliate and soothe your skin with this non-drying cleanser that helps deep cleanse pores while treating acne and dull skin’s appearance with a powerful blend of AHA, BHA, Aloe Vera Extract & Allantoin
+						</small>
+						<div>
+							<div class="btn">
+								Buy Now &#8594
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="offer2" data-aos="fade-right" >
+			<div class="small-container">
+				<div class="row">
+					<div class="col-2">
+						<img src="Images/rss2.png" class="offer-img">
+					</div>
+					<div class="col-2">
+						<p>Exclusive On SkinItRight Shop</p>
+						<h1>ZarZou Repairing & Soothing Facial Serum</h1>
+						<small>Exfoliate and soothe your skin with this non-drying cleanser that helps deep cleanse pores while treating acne and dull skin’s appearance with a powerful blend of AHA, BHA, Aloe Vera Extract & Allantoin
+						</small>
+						<div>
+							<div class="btn">
+								Buy Now &#8594
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- -----------testimonial--------->
+
+	<section class="four">
+		<div class="testimonial">
+			<div class="small-container">
+				<div class="row">
+					<div class="col-3">
+						<i class="fa fa-quote-left"></i>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum magna, condimentum id lobortis vel, tincidunt a risus. Maecenas lacinia fermentum magna consequat elementum.
+						</p>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<img src="Images/user-1.png" >
+						<h3>Emma Watson</h3>
+					</div>
+
+					<div class="col-3">
+						<i class="fa fa-quote-left"></i>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum magna, condimentum id lobortis vel, tincidunt a risus. Maecenas lacinia fermentum magna consequat elementum.
+						</p>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<img src="Images/user-2.png" >
+						<h3>Justin Bibur</h3>
+					</div>
+
+					<div class="col-3">
+						<i class="fa fa-quote-left"></i>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum magna, condimentum id lobortis vel, tincidunt a risus. Maecenas lacinia fermentum magna consequat elementum.
+						</p>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<img src="Images/user-3.png" >
+						<h3>Rihanna</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ------footer----- -->
+
+	<div class="footer">	
+		<div class="container">	
+			<div class="row">	
+				<div class="footer-col-2">	
+					<img src="Images/logo2.png">
+					<p>Treat your skin right!</p>
+					<div class="social-media">
+						<img src="Images/ig.png">
+						<img src="Images/fb.png">
+						<img src="Images/twitter.png">
+					</div>
+				</div>	
+			</div>	
+			<hr>
+			<p class="copyright">Copyright 2020 SkinItRight Shop</p>	
+		</div>
+	</div>	
+
+	<i class="fa-solid fa-circle-up"></i>
+
+	
+	<!-- javascript -->
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

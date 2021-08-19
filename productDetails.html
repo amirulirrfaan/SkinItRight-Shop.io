@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Products - SkinItRight Shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ee70e30df6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body >
+
+	<div class="container">
+
+		<!-- navbar -->
+
+		<header>
+			<div class="navbar">
+				<div class="logo">
+					<img src="Images/logo2.png" width="200px" >
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#products">Products</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#account">Account</a></li>
+					</ul>
+				</nav>
+				<img src="images/cart.png" width="45px" height="45px">
+				<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+			</div>
+		</header>
+
+		<!-- -----single product details----- -->
+
+		<div class="small-container single-product" >
+			<div class="row">
+				<div class="col-2">
+					<img src="Images/ddc.jpg" width="100%" id="ProductImg">
+
+					<div class="small-img-row">
+						<div class="small-img-col">
+							<img src="Images/bhs.jpg" width="100%" class="small-img">
+						</div>
+						<div class="small-img-col">
+							<img src="Images/rss.jpg" width="100%" class="small-img">
+						</div>
+						<div class="small-img-col">
+							<img src="Images/ddc2.jpg" width="100%" class="small-img">
+						</div>
+					</div>
+
+
+				</div>
+				<div class="col-2">
+					<p> Home / T-Shirt</p>
+					<h1>ZarZour Daily Deep Cleanser</h1>
+					<h4>Rm39.00</h4>
+					<input type="number" value="1">
+					<a href="" class="btn">Add To Cart</a>
+
+					<h3>Product Details <i class="fa fa-indent"></i></h3>
+					<br>
+					<p>Exfoliate and soothe your skin with this non-drying cleanser that helps deep cleanse pores while treating acne and dull skin’s appearance with a powerful blend of AHA, BHA, Aloe Vera Extract & Allantoin</p>
+
+				</div>
+			</div>
+		</div>	
+
+
+		<!-- ----title--- -->
+
+		<div class="small-container">
+			<div class="row row-2">
+				<h2>Related Product</h2>
+				<p>View more</p>
+			</div>			
+		</div>
+
+
+		<!-- ------products----- -->
+
+		<!-- ----------------featured products -------------- -->
+		<section class="two">
+			<div class="small-container">
+
+
+				<div class="row">
+					<div class="col-4">
+						<img src="Images/ddc.jpg">
+						<h4>ZarZou Daily Deep Cleanser</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>RM59</p>
+					</div>
+
+					<div class="col-4">
+						<img src="Images/bhs.jpg">
+						<h4>ZarZou BHS</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>RM59</p>
+					</div>
+
+					<div class="col-4">
+						<img src="Images/rss.jpg">
+						<h4>ZarZou RSS</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>RM59</p>
+					</div>
+
+					<div class="col-4">
+						<img src="Images/faceMist.jpg">
+						<h4>ZarZou Face Mist</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>RM59</p>
+					</div>
+
+
+				</div>
+
+				<div class="page-btn">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>&#8594</span>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- ------footer----- -->
+
+		<div class="footer">	
+			<div class="container">	
+				<div class="row">	
+					<div class="footer-col-2">	
+						<img src="Images/logo2.png">
+						<p>Treat your skin right!</p>
+						<div class="social-media">
+							<img src="Images/ig.png">
+							<img src="Images/fb.png">
+							<img src="Images/twitter.png">
+						</div>
+					</div>	
+				</div>	
+				<hr>
+				<p class="copyright">Copyright 2020 SkinItRight Shop</p>	
+			</div>
+		</div>	
+
+		<!-- 	js for toggle menu -->
+
+		<script>
+			var MenuItems = document.getElementById("MenuItems");
+
+			MenuItems.style.maxHeight = "0px";
+
+			function menutoggle(){
+				if(MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px";
+				}
+				else
+				{
+					MenuItems.style.maxHeight = "0px";
+				}
+			}
+		</script>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				offset: 400,
+				duration: 800
+			});
+		</script>
+
+
+		<script type="text/javascript">
+			window.addEventListener("scroll", function(){
+				var header = document.querySelector("header");
+				header.classList.toggle("sticky", window.scrollY > 0);
+			})
+		</script>
+
+
+
+		<script type="text/javascript">
+			
+			var ProductImg = document.getElementById("ProductImg");
+			var SmallImg = document.getElementByClassName("small-img");
+
+			SmallImg[0].onclick = function(){
+				ProductImg.src = SmallImg[0].src;
+			}	
+			SmallImg[1].onclick = function(){
+				ProductImg.src = SmallImg[1].src;
+			}	
+			SmallImg[2].onclick = function(){
+				ProductImg.src = SmallImg[2].src;
+			}	
+
+		</script>
+	</body>
+	</html>
