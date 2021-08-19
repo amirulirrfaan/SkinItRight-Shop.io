@@ -176,7 +176,7 @@ p{
 }
 .title::after{
 	content: '';
-	background: #ff523b;
+	background: #ff77cd;
 	width: 80px;
 	height: 5px;
 	border-radius: 5px;
@@ -194,7 +194,7 @@ h4{
 
 }
 .rating .fa{
-	color: #ff523b;
+	color: #ff77cd;
 }
 .col-4:hover{
 	transform: translateY(-5px);
@@ -210,6 +210,7 @@ h4{
 	padding: 50px;
 }
 small{
+	font-size: 20px;
 	color:#555;
 }
 .offer2{
