@@ -124,6 +124,7 @@ p{
 	display: flex;
 }
 .thumb li{
+	position: relative;
 	list-style: none;
 	display: inline-block;
 	margin: 0 10px;
