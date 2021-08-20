@@ -34,17 +34,30 @@ nav ul li{
 	display: inline-block;
 	margin-right: 20px;
 }
-a{
+nav ul li a
+{
 	text-decoration: none;
 	color: #555;
 }
-a:hover{
+nav ul li a:hover{
 	background: #87adfe;
 	transition: .5s;
 	border-radius: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
+/*a{
+	text-decoration: none;
+	color: #555;
+}*/
+/*a:hover{
+	background: #87adfe;
+	transition: .5s;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}*/
 p{
 	color: #555; 
 }
@@ -91,6 +104,10 @@ p{
 .btn:hover{
 	background: #ff77cd;
 }
+.btn a{
+	text-decoration: none;
+	color: white;
+}
 #gotopbtn{
 	position: fixed;
 	width: 50px;
@@ -110,7 +127,7 @@ p{
 .header{
 	background-image: url(Images/background.png);
 	height: 750px;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 .header .row{
 	margin-top: 1px;
@@ -299,11 +316,6 @@ small{
 .social-media img{
 	width: 30px;
 	margin: 10px;
-}
-.social-media a{
-	background-color: transparent;
-	padding-left: 0px;
-	padding-right: 0px;
 }
 .menu-icon{
 	width: 28px;
