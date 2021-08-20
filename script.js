@@ -56,4 +56,3 @@ function changeBgColor(color){
 	sec.style.background = color;
 }
 
-// scipt for product gallery
