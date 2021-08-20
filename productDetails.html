@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>All Products - SkinItRight Shop</title>
+	<title>Product Details</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,6 +145,9 @@
 
 				</div>
 
+
+				<!-- -----page number--- -->
+
 				<div class="page-btn">
 					<span>1</span>
 					<span>2</span>
@@ -158,78 +161,31 @@
 		</section>
 
 	</div>	
-		<!-- ------footer----- -->
+	<!-- ------footer----- -->
 
-		<div class="footer">	
-			<div class="container">	
-				<div class="row">	
-					<div class="footer-col-2">	
-						<img src="Images/logo2.png">
-						<p>Treat your skin right!</p>
-						<div class="social-media">
-							<img src="Images/ig.png">
-							<img src="Images/fb.png">
-							<img src="Images/twitter.png">
-						</div>
-					</div>	
+	<div class="footer">	
+		<div class="container">	
+			<div class="row">	
+				<div class="footer-col-2">	
+					<img src="Images/logo2.png">
+					<p>Treat your skin right!</p>
+					<div class="social-media">
+						<img src="Images/ig.png">
+						<img src="Images/fb.png">
+						<img src="Images/twitter.png">
+					</div>
 				</div>	
-				<hr>
-				<p class="copyright">Copyright 2020 SkinItRight Shop</p>	
-			</div>
-		</div>	
+			</div>	
+			<hr>
+			<p class="copyright">Copyright 2020 SkinItRight Shop</p>	
+		</div>
+	</div>	
 
-		<!-- 	js for toggle menu -->
+	<!-- 	js for toggle menu -->
 
-		<script>
-			var MenuItems = document.getElementById("MenuItems");
+	
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-			MenuItems.style.maxHeight = "0px";
-
-			function menutoggle(){
-				if(MenuItems.style.maxHeight == "0px")
-				{
-					MenuItems.style.maxHeight = "200px";
-				}
-				else
-				{
-					MenuItems.style.maxHeight = "0px";
-				}
-			}
-		</script>
-
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				offset: 400,
-				duration: 800
-			});
-		</script>
-
-
-		<script type="text/javascript">
-			window.addEventListener("scroll", function(){
-				var header = document.querySelector("header");
-				header.classList.toggle("sticky", window.scrollY > 0);
-			})
-		</script>
-
-
-
-		<script type="text/javascript">
-			
-			var ProductImg = document.getElementById("ProductImg");
-			var SmallImg = document.getElementByClassName("small-img");
-
-			SmallImg[0].onclick = function(){
-				ProductImg.src = SmallImg[0].src;
-			}	
-			SmallImg[1].onclick = function(){
-				ProductImg.src = SmallImg[1].src;
-			}	
-			SmallImg[2].onclick = function(){
-				ProductImg.src = SmallImg[2].src;
-			}	
-
-		</script>
-	</body>
-	</html>
+</body>
+</html>

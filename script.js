@@ -37,7 +37,7 @@ $(document).ready(function(){
 });
 
 
-// script for animation
+// script for fade animation
 
 AOS.init({
 	offset: 400,

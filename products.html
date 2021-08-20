@@ -15,6 +15,9 @@
 	<div class="container">
 
 		<header>
+
+			-<!-- ---navbar---- -->
+
 			<div class="navbar">
 				<div class="logo">
 					<a href="index.html"><img src="Images/logo2.png" width="200px" ></a>
@@ -156,6 +159,9 @@
 
 				</div>
 
+
+				<!-- ----page number--- -->
+				
 				<div class="page-btn">
 					<span>1</span>
 					<span>2</span>
@@ -170,60 +176,60 @@
 
 	</div>	
 
-		<!-- ------footer----- -->
+	<!-- ------footer----- -->
 
-		<div class="footer">	
-			<div class="container">	
-				<div class="row">	
-					<div class="footer-col-2">	
-						<img src="Images/logo2.png">
-						<p>Treat your skin right!</p>
-						<div class="social-media">
-							<a href="https://www.instagram.com/skinitright.shop/" target="_blank" ><img src="Images/ig.png"></a>
-							<a href="https://www.facebook.com/amirul.irfan.14/" target="_blank"><img src="Images/fb.png"></a>
-							<a href="https://twitter.com/Irrfaaaan"  target="_blank"><img src="Images/twitter.png"></a>
-						</div>
-					</div>	
+	<div class="footer">	
+		<div class="container">	
+			<div class="row">	
+				<div class="footer-col-2">	
+					<img src="Images/logo2.png">
+					<p>Treat your skin right!</p>
+					<div class="social-media">
+						<a href="https://www.instagram.com/skinitright.shop/" target="_blank" ><img src="Images/ig.png"></a>
+						<a href="https://www.facebook.com/amirul.irfan.14/" target="_blank"><img src="Images/fb.png"></a>
+						<a href="https://twitter.com/Irrfaaaan"  target="_blank"><img src="Images/twitter.png"></a>
+					</div>
 				</div>	
-				<hr>
-				<p class="copyright">Copyright 2020 SkinItRight Shop</p>	
-			</div>
-		</div>	
+			</div>	
+			<hr>
+			<p class="copyright">Copyright 2020 SkinItRight Shop</p>	
+		</div>
+	</div>	
 
-		<!-- 	js for toggle menu -->
+	<!-- 	js for toggle menu -->
 
-		<script>
-			var MenuItems = document.getElementById("MenuItems");
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
 
-			MenuItems.style.maxHeight = "0px";
+		MenuItems.style.maxHeight = "0px";
 
-			function menutoggle(){
-				if(MenuItems.style.maxHeight == "0px")
-				{
-					MenuItems.style.maxHeight = "200px";
-				}
-				else
-				{
-					MenuItems.style.maxHeight = "0px";
-				}
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px")
+			{
+				MenuItems.style.maxHeight = "200px";
 			}
-		</script>
+			else
+			{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
 
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				offset: 400,
-				duration: 800
-			});
-		</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 400,
+			duration: 800
+		});
+	</script>
 
 
-		<script type="text/javascript">
-			window.addEventListener("scroll", function(){
-				var header = document.querySelector("header");
-				header.classList.toggle("sticky", window.scrollY > 0);
-			})
-		</script>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script>
 
-	</body>
-	</html>
+</body>
+</html>
