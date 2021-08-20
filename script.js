@@ -18,7 +18,7 @@ function menutoggle(){
 }
 
 
-// script for go top button
+// script for go top button--
 
 $(document).ready(function(){
 
