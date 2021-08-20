@@ -110,7 +110,7 @@ p{
 .header{
 	background-image: url(Images/background.png);
 	height: 750px;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 }
 .header .row{
 	margin-top: 1px;
@@ -202,7 +202,8 @@ h4{
 
 /*-----offer------*/
 .offer1{
-	background: linear-gradient(45deg, #d8f2ff, #c1dafc);
+	background: rgb(150,150,235);	
+	background: linear-gradient(248deg, rgba(150,150,235,1) 28%, rgba(211,227,239,1) 63%);
 	margin-top: 20px;
 	padding: 30px 0;
 }
@@ -214,7 +215,8 @@ small{
 	color:#555;
 }
 .offer2{
-	background: linear-gradient(45deg, #ff77cd, #fd5aff);
+	background: rgb(235,150,199);
+	background: linear-gradient(287deg, rgba(235,150,199,1) 28%, rgba(206,159,242,1) 63%);
 	margin-top: 20px;
 	padding: 30px 0;
 }
@@ -297,6 +299,11 @@ small{
 .social-media img{
 	width: 30px;
 	margin: 10px;
+}
+.social-media a{
+	background-color: transparent;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 .menu-icon{
 	width: 28px;
